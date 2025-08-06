@@ -6,8 +6,9 @@ import com.starshootercity.abilities.NineLives;
 import com.starshootercity.abilities.ScareCreepers;
 import com.starshootercity.abilities.VelvetPaws;
 import com.starshootercity.abilities.types.Ability;
+import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
-import xyz.tye_home.felinePlusOrigin.abilities.WeakArmsPlus;
+import xyz.tye_home.felinePlusOrigin.abilities.*;
 
 import java.util.List;
 import java.util.logging.Level;
@@ -18,7 +19,6 @@ public final class FelinePlusOrigin extends OriginsAddon {
     @Override
     public void onRegister() {
         getLogger().log(Level.INFO, "Starting plugin");
-        getLogger().setLevel(Level.ALL);
     }
 
     @Override
@@ -34,11 +34,15 @@ public final class FelinePlusOrigin extends OriginsAddon {
     @Override
     public @NotNull List<Ability> getRegisteredAbilities() {
         return List.of(
+                new WeakArmsPlus(),
+                new Nocturnal(),
+                new Milk(),
+                new StrongAnklesPlus(),
+                new ReducedHaste(),
                 new FallImmunity(),
                 new VelvetPaws(),
                 new ScareCreepers(),
-                new NineLives(),
-                new WeakArmsPlus()
+                new NineLives()
         );
     }
 }

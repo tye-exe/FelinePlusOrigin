@@ -68,20 +68,18 @@ public class WeakArmsPlus implements VisibleAbility, Listener {
             }
         }
 
-        if (adjacent < 2) {
-            return;
-        }
-
         AttributeInstance attribute = Objects.requireNonNull(player.getAttribute(Attribute.PLAYER_BLOCK_BREAK_SPEED));
-        AttributeModifier attributeModifier = new AttributeModifier(new NamespacedKey("felingplusorigins", "weakarmsplus"), -0.9, AttributeModifier.Operation.MULTIPLY_SCALAR_1);
-
-        if (!this.naturalStones.contains(target.getType())) {
-            attribute.removeModifier(attributeModifier);
-            return;
-        }
-
+        AttributeModifier attributeModifier = new AttributeModifier(new NamespacedKey("felineplusorigin", "weakarmsplus"), -0.9, AttributeModifier.Operation.MULTIPLY_SCALAR_1);
         // If try to add when exists, an error is output in terminal
         boolean exists = attribute.getModifier(attributeModifier.getKey()) != null;
+
+        if (adjacent < 3) {
+            if (exists) {
+                attribute.removeModifier(attributeModifier);
+            }
+            return;
+        }
+
         if (!exists) {
             attribute.addTransientModifier(attributeModifier);
         }

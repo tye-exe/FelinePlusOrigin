@@ -4,7 +4,11 @@
     "origins:velvet_paws",
     "origins:nine_lives",
     "origins:scare_creepers",
-    "feline_plus:weak_arms_plus"
+    "feline_plus:weak_arms_plus",
+    "feline_plus:nocturnal",
+    "feline_plus:milk",
+    "feline_plus:strong_ankles_plus",
+    "feline_plus:reduced_haste"
   ],
   "icon": {
     "item": "minecraft:orange_wool"
@@ -12,5 +16,5 @@
   "order": 0,
   "impact": 2,
   "name": "FelinePlus",
-  "description": "With their cat-like appearance, the Feline scare creepers away. With the dexterity of cats, they always land safely on their feet."
+  "description": "These milkaholic creatures always land safely on their feet, and scare away creepers with their cat-like appearance."
 }
