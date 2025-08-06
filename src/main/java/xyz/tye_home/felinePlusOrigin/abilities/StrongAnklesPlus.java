@@ -39,7 +39,7 @@ public class StrongAnklesPlus implements VisibleAbility, Listener {
         }
 
         Vector velocity = player.getVelocity();
-        velocity.add(new Vector(0, 1, 0));
+        velocity.add(new Vector(0, 2, 0));
         player.setVelocity(velocity);
     }
 }
