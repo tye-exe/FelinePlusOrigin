@@ -3,7 +3,8 @@
     "origins:fall_immunity",
     "origins:velvet_paws",
     "origins:nine_lives",
-    "origins:scare_creepers"
+    "origins:scare_creepers",
+    "feline_plus:weak_arms_plus"
   ],
   "icon": {
     "item": "minecraft:orange_wool"

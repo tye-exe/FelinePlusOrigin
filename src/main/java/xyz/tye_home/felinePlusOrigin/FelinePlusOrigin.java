@@ -18,6 +18,7 @@ public final class FelinePlusOrigin extends OriginsAddon {
     @Override
     public void onRegister() {
         getLogger().log(Level.INFO, "Starting plugin");
+        getLogger().setLevel(Level.ALL);
     }
 
     @Override
