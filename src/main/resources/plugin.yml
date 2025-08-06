@@ -1,0 +1,7 @@
+name: FelinePlusOrigin
+version: '1.0.0'
+main: xyz.tye_home.felinePlusOrigin.FelinePlusOrigin
+api-version: '1.21'
+
+depend:
+  - Origins-Reborn
