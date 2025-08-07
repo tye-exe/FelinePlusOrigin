@@ -36,13 +36,9 @@ public class Milk implements VisibleAbility, Listener {
             return;
         }
 
-        player.sendMessage("Glug " + event.getItem());
-
         if (event.getItem().getType() != Material.MILK_BUCKET) {
             return;
         }
-
-        player.sendMessage("Given haste");
 
         player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 20 * 120, 0));
     }
